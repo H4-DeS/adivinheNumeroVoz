@@ -23,21 +23,29 @@ main {
 }
 
 h1 {
-	font-size: 6rem;
+	font-size: 5rem;
 	padding: 2rem;
 	font-weight: 900;
 	
 }
 
+h2 {
+	max-width: 45%;
+	text-align: center;
+	line-height: 4rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
 h3 {
-	font-size: 4rem;
+	font-size: 3rem;
 	padding: 1rem;
 	font-weight: 700;
 
 }
 
 .mensagem {
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-top: 15px;
 }
 
@@ -49,4 +57,9 @@ h3 {
 	border: 4px solid #FFDF8F;
 	border-radius: 10px;
 	margin: 3rem;
+}
+
+strong {
+	font-weight:900;
+	color:#f3540a;
 }

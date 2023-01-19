@@ -7,20 +7,15 @@ recognition.start();
 
 
 recognition.addEventListener('result', onSpeak);
+recognition.addEventListener('end', () => recognition.start())
 
 function onSpeak (e) {
     const chute = e.results[0][0].transcript;
+    tentativas++;
+    dica.innerHTML = "";
     exibeChuteNaTela(chute);
-}
-
-
-
-
-
-function exibeChuteNaTela(chute) {
-    mostraNumero.innerHTML = `
-    <p>Você disse:</p>
-		<div><span class="numero">${chute}</span></div>
-        `;
+    testaSeAcertou(chute);
+    atualizaDica(chute);
+        
 }
 
