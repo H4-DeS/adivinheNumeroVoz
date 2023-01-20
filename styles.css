@@ -17,13 +17,17 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	padding: 30px;
-	
-	
 }
 
 footer {
 	display: flex;
+	flex-direction: row;
+	font-size: 1.5rem;
+	width: 90%;
+	position: absolute;
+	bottom: 0;
 	align-items: flex-end;
 	justify-content: flex-end;
 }
@@ -32,7 +36,6 @@ h1 {
 	font-size: 5rem;
 	padding: 2rem;
 	font-weight: 900;
-	
 }
 
 h2 {
@@ -52,6 +55,7 @@ h3 {
 
 .mensagem {
 	font-size: 2rem;
+	font-weight: 600;
 	margin-top: 15px;
 }
 
@@ -65,7 +69,29 @@ h3 {
 	margin: 3rem;
 }
 
+.acertou {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
 strong {
 	font-weight:900;
 	color:#f3540a;
+}
+
+.novo-jogo {
+	color: #2A4BA3;
+	font-size: 3rem;
+	padding: 3rem 5rem;
+	border: none;
+	border-radius: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.novo-jogo:hover{
+	transform: scale(1.1);
+
+
 }

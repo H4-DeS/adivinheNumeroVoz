@@ -36,7 +36,10 @@ function testaSeAcertou(chute){
 
     if (valor == sorteio){
         document.body.innerHTML = `
-        <h2>Parabéns! Você acertou na <strong>${tentativas}º tentativa</strong>. O número sorteado era: ${sorteio}</h2>
+        <main>
+        <div  class="acertou"><h3>Parabéns! Você acertou na <strong>${tentativas}º tentativa</strong>. O número sorteado era: ${sorteio}</h3></div>
+        <button id="reinicia" class="novo-jogo">Reiniciar o jogo</button>
+        </main>
         `;
     }
 }
